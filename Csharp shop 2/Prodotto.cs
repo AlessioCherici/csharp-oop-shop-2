@@ -81,7 +81,7 @@ namespace Csharp_shop_2
         public int generatoreRGN()
             {
             Random NumeroRNGProdotto = new Random();
-            int CodiceProdotto = NumeroRNGProdotto.Next(10000000);
+            int CodiceProdotto = NumeroRNGProdotto.Next(100000000);
             return CodiceProdotto;
             }
         public double prezzoIvato(double Prezzo, double Iva)

@@ -18,6 +18,17 @@ Acqua BottigliaAcqua = new Acqua("Bottiglia d'Acqua", "Una fin troppo comune bot
 
 BottigliaAcqua.stampaTutto();
 
+SacchettoDiFrutta SacchettoDiFrutta = new SacchettoDiFrutta("Bustina di noci", "Una busta di frutta secca contenente noci", "Noci", 300, 0.30d, 22);
+
+SacchettoDiFrutta.stampaTutto();
+
+Elettrodomestico Lavatrice = new Elettrodomestico("Lavatrice Belkin MkII", "Lavatrice Belkin in grado di lavare veramente tutto tutto",
+    "Lavatrice multifunzione", 900, "A++", 1750, 22);
+
+Lavatrice.stampaTutto();
+
+
+
 
 
 

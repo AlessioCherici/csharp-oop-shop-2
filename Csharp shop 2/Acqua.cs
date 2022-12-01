@@ -49,6 +49,14 @@ namespace Csharp_shop_2
             this.sorgente = sorgente;
             }
 
+        //--------------------------------- Metodi Acqua ---------------------------------
+
+        public void svuotaBottiglia()
+            {
+            
+            }
+
+        // Override Metodo stampa
         public override void stampaTutto()
             {
             Console.WriteLine("---------" + base.getNome() + "---------" + "\n");
@@ -57,9 +65,9 @@ namespace Csharp_shop_2
             Console.WriteLine("pH: " + this.pH);
             Console.WriteLine("Sorgente: " + this.sorgente);
             Console.WriteLine("Codice Prodotto: " + base.getNumeroProdotto().ToString().PadLeft(8, '0'));
+            Console.WriteLine("Prezzo: " + base.getPrezzo() + " Euro");
             Console.WriteLine("Iva prodotto: " + base.getIva() + "%");
             Console.WriteLine("Prezzo con Iva: " + base.prezzoIvato(base.getPrezzo(), base.getIva()) + "\n" );
-            Console.WriteLine("-----------------------------------");
             }
         }
     }

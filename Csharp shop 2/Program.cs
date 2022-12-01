@@ -27,6 +27,18 @@ Elettrodomestico Lavatrice = new Elettrodomestico("Lavatrice Belkin MkII", "Lava
 
 Lavatrice.stampaTutto();
 
+// Svuoto la bottiglia
+BottigliaAcqua.svuotaBottiglia();
+
+//Aggiungo un litro d'acqua alla bottiglia
+BottigliaAcqua.refillBottigliaUtente(1);
+
+//Bevo 0.3L dalla bottiglia *slurp*
+BottigliaAcqua.beviAcqua();
+
+//Stampo il risultato delle operazioni precedenti, ora la bottiglia dovrebbe avere dentro 0.7 L
+Console.WriteLine("La bottiglia ora contiene " + BottigliaAcqua.GetLitri() + " L");
+
 
 
 

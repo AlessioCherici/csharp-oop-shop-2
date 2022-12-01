@@ -53,7 +53,33 @@ namespace Csharp_shop_2
 
         public void svuotaBottiglia()
             {
-            
+            this.litri = 0;
+            }
+
+        public void riempiBottiglia()
+            {
+            this.litri = 1.5;
+            }
+
+        public void beviAcqua()
+            {
+            this.litri = this.litri - 0.3;
+            }
+
+        public void refillBottigliaUtente(double acquaInserita)
+            {
+            if (acquaInserita < 0)
+                {
+                Console.WriteLine("Non puoi piu rimuovere un valore negativo di acqua, tonto!");
+                }
+            else if(acquaInserita > 0 && acquaInserita <= 1.5 && this.litri + acquaInserita < 1.5)
+                {
+                this.litri += acquaInserita;
+                }
+            else
+                {
+                Console.WriteLine("Hai inserito troppa acqua!");
+                }
             }
 
         // Override Metodo stampa
